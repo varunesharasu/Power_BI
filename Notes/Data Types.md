@@ -2,6 +2,10 @@ Data Types
 
 
 
+\# Data Types
+
+
+
 | Numerical Data | String Data | Date \& Time Data |
 
 | -------------- | ----------- | ---------------- |
@@ -16,45 +20,45 @@ Data Types
 
 
 
-Examples
+\## Examples
 
 
 
-Numerical Data
+\### Numerical Data
 
 
 
-&#x20;Integer: 10, 25, 100
+\* \*\*Integer:\*\* `10`, `25`, `100`
 
-&#x20;Float: 10.5, 25.75
+\* \*\*Float:\*\* `10.5`, `25.75`
 
-&#x20;Decimal: 99.99
-
-
-
-String Data
+\* \*\*Decimal:\*\* `99.99`
 
 
 
-&#x20;CHAR(): Fixed-length text
-
-&#x20;VARCHAR(): Variable-length text
-
-&#x20;Text/String: Names, Addresses, Comments
+\### String Data
 
 
 
-Date \& Time Data
+\* \*\*CHAR():\*\* Fixed-length text
+
+\* \*\*VARCHAR():\*\* Variable-length text
+
+\* \*\*Text/String:\*\* Names, Addresses, Comments
 
 
 
-&#x20;Date: 2026-06-19
+\### Date \& Time Data
 
-&#x20;Time: 14:30:00
 
-&#x20;DateTime: 2026-06-19 14:30:00
 
-&#x20;Time Zone: Asia/Kolkata
+\* \*\*Date:\*\* `2026-06-19`
+
+\* \*\*Time:\*\* `14:30:00`
+
+\* \*\*DateTime:\*\* `2026-06-19 14:30:00`
+
+\* \*\*Time Zone:\*\* `Asia/Kolkata`
 
 
 
