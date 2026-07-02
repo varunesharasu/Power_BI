@@ -1,4 +1,4 @@
 # Power BI
 
 
-### Dashboard
+### Dashboard - column chart, bar chart, pie chart
