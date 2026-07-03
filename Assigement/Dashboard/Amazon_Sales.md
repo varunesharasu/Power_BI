@@ -1,3 +1,62 @@
+# Amazon Sales Dashboard – Power BI Guide
+
+## Step 1: Load the Dataset into Power BI
+
+### 1. Open Power BI Desktop
+Launch **Power BI Desktop** on your computer.
+
+### 2. Get Data
+- Click **Home** → **Get Data**.
+- Select the appropriate data source (Excel, CSV, SQL Server, etc.).
+- Browse to your Amazon Sales dataset.
+- Click **Open**.
+
+### 3. Navigator Window
+- In the **Navigator** window, select the required worksheet or table.
+- Click **Transform Data** to open the **Power Query Editor**.
+
+### 4. Power Query Editor
+
+Verify the following before loading the data:
+
+| Column | Data Type |
+|---------|-----------|
+| Order Date | Date |
+| Ship Date | Date |
+| Sales | Decimal Number |
+| Profit | Decimal Number |
+| Quantity | Whole Number |
+| Discount | Decimal Number |
+| Shipping Cost | Decimal Number |
+
+Also ensure:
+
+- The **first row is used as headers**.
+- Column names are accurate and properly formatted.
+
+### 5. Remove Empty Rows
+- Go to **Home** → **Remove Rows** → **Remove Blank Rows** (if applicable).
+
+### 6. Check for Null Values
+Review each column for missing or null values and clean the data as needed.
+
+### 7. Rename the Table
+Rename the imported table to:
+
+```text
+Amazon Sales
+```
+
+### 8. Apply Changes
+After completing all transformations:
+
+**Home → Close & Apply**
+
+Power BI will load the cleaned dataset into the data model.
+
+
+
+
 # Amazon Sales Dashboard – DAX Measures
 
 ## Step 2: Create DAX Measures
