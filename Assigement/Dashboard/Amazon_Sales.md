@@ -187,3 +187,33 @@ DIVIDE(
 | Average Discount | Average discount offered |
 | Average Shipping Cost | Average shipping cost per order |
 | Profit per Order | Average profit earned per order |
+
+
+
+Create the Sales Trend & Sales by Category
+Sales Trend (Line Chart)
+Field	Drop Here
+Order Date	X-axis
+Total Sales	Y-axis
+
+Part 2: Sales by Category (Donut Chart)
+Select the Donut Chart visual.
+| Field           | Drop Here |
+| --------------- | --------- |
+| **Category**    | Legend    |
+| **Total Sales** | Values    |
+
+
+Profit by State (Filled Map)
+Choose the Filled Map visual (or Map if Filled Map isn't available).
+| Field            | Drop Here                                 |
+| ---------------- | ----------------------------------------- |
+| **State**        | Location                                  |
+| **Total Profit** | Color saturation (or Bubble size for Map) |
+
+Top 10 Products by Sales
+Insert a Clustered Bar Chart.
+| Field            | Drop Here |
+| ---------------- | --------- |
+| **Product Name** | Y-axis    |
+| **Total Sales**  | X-axis    |
