@@ -189,31 +189,146 @@ DIVIDE(
 | Profit per Order | Average profit earned per order |
 
 
+# Step 3: Build Dashboard Visualizations
 
-Create the Sales Trend & Sales by Category
-Sales Trend (Line Chart)
-Field	Drop Here
-Order Date	X-axis
-Total Sales	Y-axis
+---
 
-Part 2: Sales by Category (Donut Chart)
-Select the Donut Chart visual.
-| Field           | Drop Here |
-| --------------- | --------- |
-| **Category**    | Legend    |
-| **Total Sales** | Values    |
+## 3.1 Sales Trend (Line Chart)
 
+### Visual
 
-Profit by State (Filled Map)
-Choose the Filled Map visual (or Map if Filled Map isn't available).
-| Field            | Drop Here                                 |
-| ---------------- | ----------------------------------------- |
-| **State**        | Location                                  |
-| **Total Profit** | Color saturation (or Bubble size for Map) |
+**Line Chart**
 
-Top 10 Products by Sales
-Insert a Clustered Bar Chart.
-| Field            | Drop Here |
-| ---------------- | --------- |
-| **Product Name** | Y-axis    |
-| **Total Sales**  | X-axis    |
+### Fields
+
+| Field | Value |
+|--------|-------|
+| X-axis | Order Date |
+| Y-axis | Total Sales |
+
+### Purpose
+
+Shows how sales change over time.
+
+---
+
+## 3.2 Sales by Category (Donut Chart)
+
+### Visual
+
+**Donut Chart**
+
+### Fields
+
+| Field | Value |
+|--------|-------|
+| Legend | Category |
+| Values | Total Sales |
+
+### Purpose
+
+Displays each product category's contribution to total sales.
+
+---
+
+## 3.3 Profit by State (Filled Map)
+
+### Visual
+
+**Filled Map** (Recommended)
+
+If Filled Map is unavailable, use **Map**.
+
+### Fields
+
+| Field | Value |
+|--------|-------|
+| Location | State |
+| Color Saturation | Total Profit |
+
+**For Map Visual**
+
+| Field | Value |
+|--------|-------|
+| Location | State |
+| Bubble Size | Total Profit |
+
+### Purpose
+
+Shows which states generate the highest profit.
+
+---
+
+## 3.4 Top 10 Products by Sales
+
+### Visual
+
+**Clustered Bar Chart**
+
+### Fields
+
+| Field | Value |
+|--------|-------|
+| Y-axis | Product Name |
+| X-axis | Total Sales |
+
+### Filter
+
+Apply a **Top N Filter**:
+
+- Top **10**
+- By **Total Sales**
+
+### Purpose
+
+Highlights the ten highest-selling products.
+
+---
+
+# Recommended Dashboard Layout
+
+```
+---------------------------------------------------------
+| Total Sales | Total Profit | Orders | Customers |
+---------------------------------------------------------
+|             Sales Trend (Line Chart)              |
+---------------------------------------------------------
+| Sales by Category | Profit by State (Map)         |
+---------------------------------------------------------
+|          Top 10 Products by Sales                 |
+---------------------------------------------------------
+```
+
+---
+
+# Final Dashboard Checklist
+
+- [ ] Dataset imported successfully
+- [ ] Data cleaned in Power Query
+- [ ] Correct data types assigned
+- [ ] Measures table created
+- [ ] All DAX measures added
+- [ ] KPI cards created
+- [ ] Sales Trend line chart added
+- [ ] Sales by Category donut chart added
+- [ ] Profit by State filled map added
+- [ ] Top 10 Products clustered bar chart added
+- [ ] Dashboard formatted and aligned
+- [ ] Saved as `.pbix`
+
+---
+
+# Expected Dashboard
+
+The completed dashboard should provide insights into:
+
+- Total Sales
+- Total Profit
+- Total Orders
+- Total Customers
+- Sales Trend over time
+- Sales distribution by Category
+- Profit by State
+- Top 10 Products by Sales
+
+This layout creates a clean, executive-level Power BI dashboard suitable for business reporting and portfolio projects.
